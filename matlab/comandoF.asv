@@ -1,0 +1,16 @@
+% template per funzione con numero variabile di argomenti (di input)
+
+function comando(varargin)
+
+    
+    % Parte generale... come recuperare il numero dei parametri e i
+    % parametri stessi... (FUNZIA??)
+    
+    
+    display (varargin(1));
+    prova = strcat(varargin(1) , '*')
+    
+    
+    
+    dir (prova)
+end

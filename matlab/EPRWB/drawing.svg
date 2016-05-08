@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3779">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3781"
+         width="2280"
+         height="1454.2858"
+         x="-711.42859"
+         y="-427.63782"
+         rx="49.451897"
+         ry="61.117207" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3779-7">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3781-3"
+         width="2280"
+         height="1454.2858"
+         x="-711.42859"
+         y="-427.63782"
+         rx="49.451897"
+         ry="61.117207" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3779-7-0">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect3781-3-6"
+         width="2280"
+         height="1454.2858"
+         x="-711.42859"
+         y="-427.63782"
+         rx="49.451897"
+         ry="61.117207" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="384.57871"
+     inkscape:cy="589.92379"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     units="mm" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       y="-512.17029"
+       x="-914.45013"
+       id="image3774"
+       xlink:href="file:///home/lolleka/matlab/EPRWB/1%20spire.png"
+       height="1556"
+       width="2666"
+       clip-path="url(#clipPath3779)"
+       transform="matrix(0.16731727,0,0,0.16731727,170.41264,108.235)" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.40520072;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985"
+       width="415.70502"
+       height="309.40582"
+       x="34.267529"
+       y="27.38142"
+       ry="61.117207"
+       rx="49.451897" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="88.188789"
+       y="311.92035"
+       id="text3783"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3785"
+         x="88.188789"
+         y="311.92035"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Iceland;-inkscape-font-specification:Iceland">1 Turn Coil Antenna</tspan></text>
+    <image
+       y="-512.17029"
+       x="-914.45013"
+       id="image3774-6"
+       xlink:href="file:///home/lolleka/matlab/EPRWB/3%20spire.png"
+       height="1556"
+       width="2666"
+       clip-path="url(#clipPath3779-7)"
+       transform="matrix(0.16731727,0,0,0.16731727,170.41264,435.05078)" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.40520072;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-7"
+       width="415.70502"
+       height="309.40582"
+       x="34.267529"
+       y="354.1972"
+       ry="61.117207"
+       rx="49.451897" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="79.976288"
+       y="638.73615"
+       id="text3783-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3785-2"
+         x="79.976288"
+         y="638.73615"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Iceland;-inkscape-font-specification:Iceland">3 Turns Coil Antenna</tspan></text>
+    <image
+       y="-512.17029"
+       x="-914.45013"
+       id="image3774-6-7"
+       xlink:href="file:///home/lolleka/matlab/EPRWB/5%20spire.png"
+       height="1556"
+       width="2666"
+       clip-path="url(#clipPath3779-7-0)"
+       transform="matrix(0.16731727,0,0,0.16731727,170.41264,773.45188)" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2.40520072;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect2985-7-8"
+       width="415.70502"
+       height="309.40582"
+       x="34.267529"
+       y="692.59833"
+       ry="61.117207"
+       rx="49.451897" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="79.976288"
+       y="977.13727"
+       id="text3783-8-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3785-2-1"
+         x="79.976288"
+         y="977.13727"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Iceland;-inkscape-font-specification:Iceland">5 Turns Coil Antenna</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="327.24606"
+       y="281.64789"
+       id="text3024"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3026"
+         x="327.24606"
+         y="281.64789"
+         style="font-size:10px">Room Temperature</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="327.24606"
+       y="607.11005"
+       id="text3024-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3026-4"
+         x="327.24606"
+         y="607.11005"
+         style="font-size:10px">Room Temperature</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="327.24606"
+       y="948.53857"
+       id="text3024-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3026-3"
+         x="327.24606"
+         y="948.53857"
+         style="font-size:10px">Room Temperature</tspan></text>
+  </g>
+</svg>

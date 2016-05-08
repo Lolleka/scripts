@@ -1,0 +1,77 @@
+function testderivata (root)
+
+    files = dir (strcat(root,'*'));
+    if (length(files)>=1)
+        filename = files(1).name;
+    end
+        
+    close all;    
+    
+    matrix = load(filename);    % battezzo "matrix" il filename che carico
+    [row,col]=size(matrix);     % recupera le dimensioni della matrice del file dati ribattezzato "matrix"
+                                % e inserisce questi due numeri (righe e colonne) nelle variabili row e col
+    x=matrix(1,2:col);
+    y=matrix(2:row,1);          % recuperano rispettivamente la prima riga e la prima colonna del mio file dati
+                                % tralasciando il primo elemento, che ho settato a 0
+
+    z=matrix(2:row,2:col);      % recupera il resto del mio file dati e lo inserisce in una matrice di nome z
+    N=size(z,2);
+    M=size(z,1);
+    
+    fighandle = figure(1);
+    set(fighandle,'WindowButtonDownFcn',{@mytestcallback,x,y,z,M});
+    imagesc(x,y,z);
+    title( strcat('\fontsize{16}',root));
+    xlabel('provax');
+    ylabel('provay');
+    caxis([-1.5 1.5]);
+    colorbar;
+end
+
+function mytestcallback(hObject,eventdata,x,y,f,M)
+    CP = get(get(hObject,'CurrentAxes'), 'CurrentPoint');
+    [m,xposition] = min(abs(x - CP(1,1)));
+
+    CP(1,1)
+    figure(2);
+    ff=abs(f(1:M,xposition)./(CP(1,1)*1e6));
+    plot(y,ff);
+    
+    ele = 1.60217646E-19;
+    kB = 1.3806488E-23;
+
+    A=(ele.^2)./(16.*kB);
+    C=0.02*ele/(2*kB);
+    
+    [pks,locs] = findpeaks(ff,'minpeakdistance',5);
+    
+    str = '';
+    for i = 1:size(locs,2)
+        p1 = (i-1)*3+1;
+        p2 = (i-1)*3+2;
+        p3 = (i-1)*3+3;
+        p(p1) = pks(i)*1e17;
+        p(p2) = 4;
+        p(p3) = y(locs(i));
+        tmp = sprintf('%e*(p(%i)./p(%i))*(cosh((%e./p(%i))*(x-p(%i)))).^(-2)+', A,p1,p2,C,p2,p3);
+        str = strcat(str,tmp);
+    end
+    str = strcat(str,'0');
+    fitfunc = inline(str,'p','x');
+    
+    [p,r,j] = nlinfit(y,ff,fitfunc,p);
+    
+    figure(2);
+    hold on;
+    plot (y, fitfunc(p,y),'Color','red');
+    hold off;
+    
+    for i = 1:size(locs,2)
+        p1 = (i-1)*3+1;
+        p2 = (i-1)*3+2;
+        p3 = (i-1)*3+3;
+        disp(['Peak ', int2str(i), ' y0 = ', mat2str(p(p3)), ': Gamma = ', mat2str(p(p1)), ' T = ', mat2str(p(p2))]);
+    end
+end
+
+
