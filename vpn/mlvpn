@@ -1,0 +1,16 @@
+#!/usr/bin/zsh
+#
+#Check parameter and if filexists
+#
+if [ ! -e /etc/nordvpn/$1.nordvpn.com.tcp443.ovpn ]
+then
+    echo "No such file..."
+    exit
+fi
+
+sudo vpnns donkey up 10.1.2
+sudo vpnns donkey start_vpn $1
+#sudo vpnns nordvpn run sudo openvpn --config /etc/nordvpn/$1.nordvpn.com.tcp443.ovpn --auth-user-pass /etc/nordvpn/nordvpncred 
+sudo vpnns donkey run mlnet
+sudo vpnns donkey stop_vpn
+sudo vpnns donkey down

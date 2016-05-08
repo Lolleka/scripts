@@ -1,0 +1,22 @@
+#!/bin/sh
+# inspired by http://wiki.archlinux.org/index.php/Rxvt-unicode#Improved_Kuake-like_behavior_in_Openbox
+
+if [ -e "/tmp/urxvtq-wid" ]; then
+  wid=$( cat /tmp/urxvtq-wid )
+ 
+  if [ -e "/tmp/urxvtq" ]; then 
+    xdotool windowunmap $wid    
+    rm /tmp/urxvtq
+  else                          
+    xdotool windowmap $wid
+    xdotool windowfocus $wid         
+    touch /tmp/urxvtq
+  fi
+else                            
+  urxvt -name urxvtq -geometry 80x28 #this defines the size of the window
+  wid=$(xdotool search --name urxvtq | head -n 1 )
+  xdotool windowfocus $wid
+  xdotool windowactivate $wid
+  touch /tmp/urxvtq
+  echo $wid > /tmp/urxvtq-wid
+fi

@@ -1,0 +1,2 @@
+#!/bin/bash
+ffmpeg -i "$1" -vn -acodec libmp3lame -ac 2 -ab 192k -ar 44100 -threads 16 -f mp3 "$1.mp3"

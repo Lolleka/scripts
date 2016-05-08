@@ -1,0 +1,8 @@
+#!/bin/bash
+youtube-dl http://www.youtube.com/watch?v=$1
+FNAME=$(youtube-dl http://www.youtube.com/watch?v=$1 --get-filename)
+#FNAME2=$(echo "$FNAME" | sed 's/\.mp4/\.mp3/')
+FNAME2="$FNAME.mp3"
+ffmpeg -i "$FNAME" -vn -acodec libmp3lame -ac 2 -ab 192k -ar 44100 -threads 16 -f mp3 "$FNAME2"
+mv "./$FNAME2" ~/music/
+rm "$FNAME"

@@ -1,0 +1,2 @@
+sudo vpnns kit up 10.1.1
+sudo vpnns kit start_vpn /home/lolleka/scripts/scc.ovpn /home/lolleka/scripts/kitcred
