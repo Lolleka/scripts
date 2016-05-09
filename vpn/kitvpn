@@ -2,7 +2,9 @@
 #
 #Check parameter and if filexists
 #
-if [ ! -e ~/scripts/nordvpn/kitvpn.ovpn ]
+KITVPNSCRIPT=~/git/scripts/vpn/kitvpn.ovpn
+KITCRED=~/git/scripts/vpn/kitcred
+if [ ! -e $KITVPNSCRIPT ] 
 then
     echo "No such file..."
     exit
@@ -13,7 +15,7 @@ case "$1" in
 up)
     echo "starting kit vpn"
     sudo vpnns kit up 10.1.2
-    sudo vpnns kit start_vpn ~/scripts/nordvpn/kitvpn.ovpn ~/scripts/kitcred ;;
+    sudo vpnns kit start_vpn $KITVPNSCRIPT $KITCRED ;;
     #sudo vpnns nordvpn run sudo openvpn --config /etc/nordvpn/$1.nordvpn.com.tcp443.ovpn --auth-user-pass /etc/nordvpn/nordvpncred 
 down)
     echo "stopping kit vpn"
