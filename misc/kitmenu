@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+curl -s "http://www.aserv.kit.edu/downloads/Speiseplan_englisch.pdf" > /tmp/speisekarte.pdf
+pdftotext -f 1 -l 1  -layout /tmp/speisekarte.pdf -
+rm /tmp/speisekarte.pdf
+
