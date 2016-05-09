@@ -1,0 +1,3 @@
+#!/usr/bin/zsh
+wget "http://lolleka:maryjane@lolleka.no-ip.biz:7000/?action=snapshot" -O ~/.backgroundplant.jpg
+feh --bg-fill ~/.backgroundplant.jpg
