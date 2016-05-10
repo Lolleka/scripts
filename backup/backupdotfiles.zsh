@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-BASE_BCK_DIR="$HOME/scripts/dotfiles"
+BASE_BCK_DIR="$HOME/git/dotfiles"
 mkdir -p $BASE_BCK_DIR/home/.config
 mkdir -p $BASE_BCK_DIR/misc
 mkdir -p $BASE_BCK_DIR/etc
@@ -104,8 +104,8 @@ if [ -d "$HOME/.config/i3blocks" ]
 then
     echo "Saving i3blocks files..."
     cp -r $HOME/.config/i3blocks $BASE_BCK_DIR/home/.config
-    mkdir -p $BASE_BCK_DIR/usr/libexec/i3blocks
-    cp -r /usr/libexec/i3blocks/* $BASE_BCK_DIR/usr/libexec/i3blocks
+    mkdir -p $BASE_BCK_DIR/usr/lib/i3blocks
+    cp -r /usr/lib/i3blocks/* $BASE_BCK_DIR/usr/lib/i3blocks
 else
     echo "i3blocks not found."
 fi
@@ -135,6 +135,24 @@ then
     cp $HOME/.zshrc $BASE_BCK_DIR/home
 else
     echo ".zshrc not found."
+fi
+
+#Backup .zprofile
+if [ -e "$HOME/.zprofile" ]
+then
+    echo "Saving .zprofile..."
+    cp $HOME/.zprofile $BASE_BCK_DIR/home
+else
+    echo ".zprofile not found."
+fi
+
+#Backup .lscolors
+if [ -e "$HOME/.lscolors" ]
+then
+    echo "Saving .lscolors..."
+    cp $HOME/.lscolors $BASE_BCK_DIR/home
+else
+    echo ".lscolors not found."
 fi
 
 #Backup .vimrc
@@ -223,5 +241,5 @@ crontab -l > $BASE_BCK_DIR/misc/cron.bck
 #Backup self
 cp $0 $BASE_BCK_DIR/misc
 
-sudo zip -r dotfiles ./dotfiles/* 
+sudo zip -r $BASE_BCK_DIR/dotfiles $BASE_BCK_DIR/* 
 
