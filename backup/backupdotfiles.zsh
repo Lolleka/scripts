@@ -241,5 +241,5 @@ crontab -l > $BASE_BCK_DIR/misc/cron.bck
 #Backup self
 cp $0 $BASE_BCK_DIR/misc
 
-sudo zip -r $BASE_BCK_DIR/dotfiles $BASE_BCK_DIR/* 
+sudo zip -r -q $BASE_BCK_DIR/dotfiles $BASE_BCK_DIR/* 
 
