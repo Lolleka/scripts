@@ -1,0 +1,7 @@
+#!/usr/bin/zsh
+rm /tmp/mplayer-control
+mkfifo /tmp/mplayer-control
+sudo chmod a+w /tmp/mplayer-control
+mplayer -slave -quiet -idle -input file=/tmp/mplayer-control $@ > /tmp/mplayer-output 2>/dev/null
+rm /tmp/mplayer-output
+
